@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Profile Page</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div>
+      <h1>Welcome to my Personal Profile!</h1>
+      <p>I'd love to know more about you! Please fill out the form below and tell me about yourself!</p>
+      <form>
+        <p>
+          <label>Name: </label>
+          <input type="text" id="users-name" maxlength="30" required>
+        </p>
+        <p>
+          <label>Email: </label>
+          <input type="text" id="users-email" maxlength="30">
+        </p>
+        <p>
+          <label>About You: </label>
+          <input type="text" id="users-info" maxlength="200">
+        </p>
+        <p>
+          <button type="submit">Submit</button>
+        </p>
+      </form>
+    </div>
+    <hr />
+    <section style="display: flex; gap: 20px;">
+      <img src="./images/profilepicture.jpg" alt="Jason Updegraff" style="width: 200px; height: 200px;">
+      <div>
+        <h1>Jason Updegraff</h1>
+        <h2>Front-End Web Developer</h2>
+        <p>Maple Valley, WA 98038</p>
+        <p>Email: <a href="mailto:mpupdegraff@outlook.com">MPUpdegraff@outlook.com</a></p>
+        <p>Github: <a href="https://github.com/ArgonautCaptain/">ArgonautCaptain</a></p>
+        <p>Phone: +1 717-602-5437</p>
+      </div>
+    </section>
+    <hr />
+    <div>
+      <table>
+        <tr>
+          <th>Skill</th>
+          <th>Level</th>
+          <th>Years of Experience</th>
+        </tr>
+        <tr>
+          <td>HTML/CSS</td>
+          <td>Intermediate</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Java</td>
+          <td>Intermediate</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>React</td>
+          <td>Intermediate</td>
+          <td>2</td>
+        </tr>
+      </table>
+    </div>
+  </main>
+</body>
+
+</html>

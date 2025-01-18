@@ -1,0 +1,90 @@
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Times New Roman', Times, serif;
+  display: grid;
+  place-items: center;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto 0;
+}
+
+section {
+  padding: 5%;
+}
+
+a {
+  color: #bb86fc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  color: #ffffff;
+}
+
+h4 {
+  margin-left: 20px;
+  color: gray;
+}
+
+.info-header {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.profile-section {
+  display: flex;
+  gap: 20px;
+  width: 90%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.profile-left,
+.profile-right {
+  flex: 1;
+}
+
+.profile-left {
+  text-align: left;
+}
+
+.profile-right {
+  text-align: right;
+}
+
+.profile-picture {
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+}
+
+.profile-line {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.info-section {
+  border: 1px solid #e0e0e0;
+}
+
+.info-job-section {
+  border: 1px solid grey;
+  padding: 20px;
+}
+
+.info-details-section {
+  border: 1px solid grey;
+  padding: 20px;
+}
+
+.summary-info {
+  text-align: justify;
+}
