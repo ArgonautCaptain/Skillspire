@@ -1,0 +1,298 @@
+body {
+  line-height: 1.34;
+  margin: 0px;
+  padding: 0px;
+  overflow-y: scroll;
+}
+
+.UIPage_LoggedOut {
+  background: #fff;
+  color: #1c1e21;
+  direction: ltr;
+  padding-bottom: 112px;
+  padding-top: 72px;
+  background: #f2f4f7;
+  min-width: 500px;
+  height: 536px;
+}
+
+@media (max-width: 900px) {
+  .UIPage_LoggedOut {
+    padding-bottom: 164px;
+    padding-top: 20px;
+  }
+}
+
+.fb_content {
+  margin: 0 auto;
+  padding: 20px 0;
+  position: relative;
+  width: 980px;
+}
+
+@media (max-width: 900px) {
+  .fb_content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: auto;
+  }
+}
+
+.fb_login_left_container {
+  box-sizing: border-box;
+  margin-right: 0;
+  padding-right: 32px;
+  width: 580px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media (max-width: 1075px) {
+  .fb_login_left_container {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 400px;
+  }
+}
+
+.fb_logo_container {
+  box-sizing: border-box;
+  margin-right: 0;
+  padding-right: 32px;
+  width: auto;
+  padding: 112px 0 16px;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .fb_logo_container {
+    padding: 0 0 20px 0;
+    margin: 0 auto;
+  }
+}
+
+.fb_logo {
+  height: 106px;
+  margin: -28px;
+  border: 0px;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.fb_slogan_container {
+  width: 500px;
+  padding: 0 0 20px;
+}
+
+@media (max-width: 900px) {
+  .fb_slogan_container {
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
+.fb_slogan {
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 32px;
+  padding: 0 0 20px;
+  margin: 0;
+}
+
+@media (max-width: 1075px) {
+  .fb_slogan {
+    font-size: 24px;
+    line-height: 28px;
+    width: 368px;
+  }
+}
+
+.fb_login_right_container {
+  font-size: 12px;
+  height: 456px;
+  width: 396px;
+  display: inline-block;
+}
+
+@media (max-width: 900px) {
+  .fb_login_right_container {
+    float: none;
+    margin: 0 auto;
+  }
+}
+
+.fb_login_form_container {
+  align-items: center;
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, .1), 0px 8px 16px rgba(0, 0, 0, .1);
+  box-sizing: border-box;
+  margin: 40px 0 0;
+  padding: 20px 0 28px;
+  width: 396px;
+  display: block;
+  padding-bottom: 24px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.fb_login_form {
+  padding-bottom: 24px;
+  padding-top: 10px;
+  display: block;
+  padding: 6px 0;
+}
+
+.fb_login_input {
+  border-radius: 6px;
+  font-size: 17px;
+  padding: 14px 16px;
+  margin: 6px 0;
+  width: 330px;
+  vertical-align: middle;
+  height: 22px;
+  line-height: 16px;
+  border: 1px solid #dddfe2;
+  box-shadow: none;
+  color: #1d2129;
+  background: #FFFFFF;
+  vertical-align: middle;
+  outline: none;
+}
+
+.fb_login_input:focus {
+  border: 1px solid #0866ff !important;
+  box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+.fb_login_button {
+  background-color: #0866ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 0 16px;
+  width: 364px;
+  margin-top: 6px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.fb_login_button:hover {
+  background-color: #1877f2;
+}
+
+.fb_login_forgot_password {
+  margin-top: 16px;
+  display: block;
+  text-align: center;
+}
+
+.fb_login_forgot_password_link {
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.fb_login_forgot_password_link:hover {
+  text-decoration: underline;
+}
+
+.fb_login_divider {
+  align-items: center;
+  border-bottom: 1px solid #dadde1;
+  display: flex;
+  margin: 20px 16px;
+  text-align: center;
+}
+
+.fb_login_create_account {
+  padding-top: 6px;
+  display: block;
+  text-align: center;
+  font-size: 12px;
+}
+
+.fb_create_account_button {
+  border: none;
+  border-radius: 6px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 48px;
+  padding: 0 16px;
+  background-color: #36a420;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.fb_create_account_button:hover {
+  background-color: #2b9217;
+}
+
+.fb_pages_msg_container {
+  border-top: none;
+  font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  text-align: center;
+  text-shadow: none;
+  vertical-align: middle;
+  padding-top: 0;
+  margin-top: 28px;
+  text-align: center;
+}
+
+.fb_pages_msg_link {
+  font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1c1e21;
+  text-decoration: none;
+}
+
+.fb_pages_msg_link:hover {
+  text-decoration: underline;
+}
+
+.fb_page_footer {
+  padding-top: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: #737373;
+  margin: 0 auto;
+  width: 980px;
+}
+
+.fb_page_footer_divider {
+  border-bottom: 1px solid #dddfe2;
+  font-size: 1px;
+  height: 8px;
+  margin-bottom: 8px;
+}
+
+.fb_page_footer_wrapper {
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .fb_page_footer {
+    margin: 0 40px;
+    width: auto;
+  }
+}
+
+.fb_page_footer_text {
+  text-wrap: wrap;
+}
