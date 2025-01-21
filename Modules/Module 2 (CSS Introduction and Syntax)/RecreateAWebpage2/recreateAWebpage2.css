@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+header {
+  display: grid;
+  gap: 10px;
+}
+
+.header-top {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.header-logo {
+  width: 100px;
+  height: auto;
+}
+
+.header-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: right;
+}
+
+.header-nav {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  text-align: center;
+  font-weight: bold;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: darkcyan;
+  padding: 10px 0;
+  text-decoration: underline;
+}
+
+.header-nav a:hover {
+  color: darkcyan;
+  text-decoration: none;
+}
+
+
+.header-banner {
+  height: 50px;
+  background: linear-gradient(to right, darkcyan, white);
+  color:
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 18px;
+}
+
+.news-events {
+  background-color: white;
+  color: black;
+}
+
+.find-dentist {
+  background-color: rgb(255, 209, 209);
+  color: black;
+}
+
+.quick-tips {
+  background-color: rgb(185, 164, 185);
+  color: black;
+}
