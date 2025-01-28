@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Alef", serif;
   line-height: 1.6;
   background-color: #f9f9f9;
   padding: 20px;
@@ -11,6 +11,7 @@ header {
 }
 
 .header-top {
+  font-family: "Alef", serif;
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
@@ -32,11 +33,12 @@ header {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   text-align: center;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .header-nav a {
   text-decoration: none;
+
   color: darkcyan;
   padding: 10px 0;
   text-decoration: underline;
@@ -72,7 +74,20 @@ main {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
-  font-size: 18px;
+  /* font-size: 18px; */
+}
+
+.card li, p {
+  text-align: left;
+}
+
+.news-events, a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.news-events, a:hover {
+  color: darkcyan;
 }
 
 .news-events {
@@ -80,9 +95,14 @@ main {
   color: black;
 }
 
+
 .find-dentist {
   background-color: rgb(255, 209, 209);
   color: black;
+}
+
+.find-dentist-form {
+  text-align: left;
 }
 
 .quick-tips {

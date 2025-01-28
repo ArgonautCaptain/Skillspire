@@ -4,19 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./recreateAWebpage2.css">
   <title>Resume - Jason Updegraff</title>
 </head>
 
 <body>
   <header>
-    <!-- First Line: Logo and Title -->
     <div class="header-top">
       <img src="logo.png" alt="Dental Hygiene Logo" class="header-logo">
       <div class="header-title">The Dental Hygiene Association</div>
     </div>
-
-    <!-- Second Line: Navigation Links -->
     <nav class="header-nav">
       <a href="#">Home</a>
       <a href="#">Adults</a>
@@ -25,21 +25,35 @@
       <a href="#">FAQ</a>
       <a href="#">Glossary</a>
     </nav>
-
-    <!-- Third Line: Banner -->
     <div class="header-banner"></div>
     <hr />
   </header>
-
-  <!-- Body Section -->
   <main>
     <div class="card news-events">
       <h2>News & Events</h2>
-      <p>Stay updated on the latest dental hygiene news and upcoming events.</p>
+      <h5>Click to find out more!</h5>
+      <ul>
+        <li>
+          <a href="#">Irish Academy of Aesthetic Dentistry (IAAD) Meeting</a>
+        </li>
+        <li>
+          <a href="#">Irish dentists report on eating disorders</a>
+        </li>
+        <li>
+          <a href="#">Irish Dental Association Annual Conference 2014</a>
+        </li>
+        <li>
+          <a href="#">Maternal saliva predicts dental</a>
+        </li>
+      </ul>
     </div>
     <div class="card find-dentist">
       <h2>Find a Dentist</h2>
-      <p>Locate a qualified dentist near you for your dental needs.</p>
+      <p>Looking for a dentist in your area? Enter any details below and search for dentists near you!</p>
+      <form class="find-dentist-form">
+        <label>First name of Dentist: </label>
+        <input type="text" id="users-name" placeholder="First Name" maxlength="30" required>
+      </form>
     </div>
     <div class="card quick-tips">
       <h2>Quick Tips</h2>
