@@ -7,14 +7,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600&family=Montserrat:wght@100&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./recreateAWebpage2.css">
-  <title>Resume - Jason Updegraff</title>
+  <title>Recreate a Webpage 2</title>
 </head>
 
 <body>
   <header>
     <div class="header-top">
-      <img src="logo.png" alt="Dental Hygiene Logo" class="header-logo">
+      <img src="./images/DentalHygieneAssociationLogo.png" alt="Dental Hygiene Logo" class="header-logo">
       <div class="header-title">The Dental Hygiene Association</div>
     </div>
     <nav class="header-nav">
@@ -25,7 +26,9 @@
       <a href="#">FAQ</a>
       <a href="#">Glossary</a>
     </nav>
-    <div class="header-banner"></div>
+    <div class="header-banner">
+      <h1>Only 46% of households buy toothbrushes</h1>
+    </div>
     <hr />
   </header>
   <main>
@@ -51,13 +54,53 @@
       <h2>Find a Dentist</h2>
       <p>Looking for a dentist in your area? Enter any details below and search for dentists near you!</p>
       <form class="find-dentist-form">
-        <label>First name of Dentist: </label>
-        <input type="text" id="users-name" placeholder="First Name" maxlength="30" required>
+        <div>
+          <label>First name of Dentist: </label>
+        </div>
+        <div>
+          <input type="text" id="dentist-fname" placeholder="First Name" maxlength="30">
+        </div>
+        <div>
+          <label>Last name: </label>
+        </div>
+        <div>
+          <input type="text" id="dentist-lname" placeholder="Last Name" maxlength="30">
+        </div>
+        <div>
+          <label>Location: </label>
+        </div>
+        <div>
+          <input type="text" id="dentist-location" placeholder="Location" maxlength="30">
+        </div>
+        <div>
+          <label>What type of dentist are you looking for?</label>
+        </div>
+        <div>
+          <input type="checkbox" id="dentist-type" value="Orthodontist">Orthodontist
+        </div>
+        <div>
+          <input type="checkbox" id="dentist-type" value="General Dental Practitioner">General Dental Practitioner
+        </div>
+        <div>
+          <input type="checkbox" id="dentist-type" value="Oral Surgeon">Oral Surgeon
+        </div>
+        <div>
+          <input type="checkbox" id="dentist-type" value="Pediatric Dentist">Pediatric Dentist
+        </div>
+        <div>
+          <input type="submit" value="Search!">
+        </div>
       </form>
     </div>
     <div class="card quick-tips">
       <h2>Quick Tips</h2>
-      <p>Learn quick and easy tips to maintain your dental hygiene.</p>
+      <ul>
+        <li>Change your toothbrush every 3 months</li>
+        <li>Clean your tongue as well as your teeth</li>
+        <li>Floss every day</li>
+        <li>See your dentist every 6 months</li>
+        <li>Cut down on how often you have sweet drinks and foods</li>
+      </ul>
     </div>
   </main>
 </body>
