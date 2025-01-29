@@ -1,0 +1,254 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+
+body{
+  font-family: 'Open Sans';
+	width:100%;
+	height:100%;
+	margin:auto;
+	box-shadow:10px 10x 40px grey
+}
+
+header{
+	border-bottom:1px solid #133783;
+	height:100px;
+	background:#415e9b;
+  margin-bottom: 40px;
+}
+
+.header-block{
+	width:80%;
+	margin:0 10%;
+	padding-top:20px;
+}
+
+.logo{
+	width:50%;
+	float:left;
+}
+
+.facebook-login{
+	width:50%;
+	float:left;
+}
+
+.logo img{
+	height:43px;
+	width:180px;
+  margin-top: 20px;
+	padding-top: 10px;
+	padding-bottom: 0px;
+}
+
+.header-block label{
+	color:#fff;
+}
+
+.email{
+	float:left;
+}
+
+.email label{
+  font-size: 12px;
+	padding-bottom:10px;
+}
+
+.email input[type="text"]{
+	height:20px;
+	width:150px;
+	border:1px solid #1d2a5b;
+}
+
+.email input[type="checkbox"]{
+  margin:10px;
+}
+
+.email .keep-logged-in{
+  font-size: 12px;
+	color:#8fb1d8;
+	text-decoration:none;
+}
+
+.password{
+	float:left;
+	margin-left:15px;
+}
+
+.password label{
+  font-size: 12px;
+	padding-bottom:10px;
+}
+
+.password input[type="text"]{
+	height:20px;
+	width:150px;
+	border:1px solid #1d2a5b;
+}
+
+.password a{
+  margin-top: 20px;
+  font-size: 12px;
+	color:#8fb1d8;
+	text-decoration:none;
+}
+
+.password .forgot{
+  margin-top: 12px;
+  font-size: 12px;
+	color:#8fb1d8;
+	text-decoration:none;
+}
+
+.login-button {
+	float:left;
+	margin-top:20px;
+	margin-left:20px;
+}
+
+.login-button input[type="submit"]{
+	background:#4267b2;
+	border:1px solid #29487d;
+	border-radius:2px;
+	color:#fff;
+	height:20px;
+	width:50px;
+  cursor: pointer;
+}
+
+.content-block{
+	width:80%;
+	margin:0 10%;
+}
+
+.facebook-connect{
+	margin-top:50px;
+	float:left;
+	width:40%;
+  margin-right: 10%;
+}
+
+.facebook-connect .facebook-connect-content p{
+	margin-top:20px;
+  margin-left: 40px;
+}
+
+.create-account{
+	float:left;
+	width:40%;
+}
+
+.content-container{
+	background:linear-gradient(#fff,#d9ddeb);
+	overflow:hidden;
+}
+
+.create-account h2{
+	font-size:40px;
+}
+
+.create-account p{
+	font-size:20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.account input[type="text"]{
+	margin-bottom:15px;
+	border-radius:5px;
+	padding:10px;
+	font-size:16px;
+	border:1px solid #bdc7d8;
+}
+
+.account input[type="password"]{
+	border-radius:5px;
+	padding:10px;
+	font-size:16px;
+	margin-left:0px;
+	border:1px solid #bdc7d8;
+}
+
+.account .input-name {
+  width: 40%;
+  margin-right: 2%;
+}
+
+.account .mobile {
+  width: 86%;
+}
+
+.account .password {
+  width: 86%;
+}
+
+.account label{
+	font-weight:bold;
+}
+
+.account .gender-label{
+  margin-left:10px;
+  margin-right: 10px;
+}
+
+.account a{
+	text-decoration:none;
+	color:#3677bc;
+}
+
+.account input[type="radio"]{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.account .by-clicking{
+	color:#77777a;
+	font-size:12px;
+}
+
+.account input[type="submit"]{
+	padding:8px 36px;
+	background:linear-gradient(#95d67c,#65a953);
+	border:1px solid #3b6e22;
+	border-radius:5px;
+	font-size:25px;
+	color:#fff;
+	margin-top:15px;
+	margin-bottom:15px;
+  cursor: pointer;
+}
+
+.account .birthday-entry, .birthday-select{
+  margin-bottom: 10px;
+}
+
+.birthday-select {
+  width: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #c0c0c0;
+  background-color: #e9e9e9;
+}
+
+.why-do-i{
+  margin-left: 10px;
+  width: 25px;
+  text-wrap: normal;
+	font-size:12px;
+}
+
+#footer{
+	width:100%;
+	height:200px;
+	text-align:center;
+}
+
+#footer p{
+	font-size:15px;
+}
+
+#footer p a{
+	text-decoration:none;
+}
