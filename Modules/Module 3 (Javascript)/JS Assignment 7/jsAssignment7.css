@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
+
+form {
+  display: inline-block;
+  text-align: left;
+  margin-top: 5px;
+}
+
+label, input {
+  display: block;
+  margin: 10px 0;
+}
+
+input {
+  padding: 5px;
+  width: 100%;
+}
+
+button {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.spacer {
+  height: 20px;
+}
+
+hr {
+  width: 100%;
+  margin: 10px 0;
+}
+
+#output {
+  margin-top: 20px;
+}
