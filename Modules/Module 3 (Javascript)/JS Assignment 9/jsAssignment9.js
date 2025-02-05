@@ -8,11 +8,11 @@ function findNegatives (arr) {
   return numberArray;
 }
 
-arrayWithNegatives = [1, 2, -3, 4, -5, 6, 7, -8, 9, 10];
+let arrayWithNegatives = [1, 2, -3, 4, -5, 6, 7, -8, 9, 10];
 console.log("Array with negatives: ");
 console.log(arrayWithNegatives);
 console.log("Array with negatives replaced by 'Negative': ");
-arrayWithoutNegatives = findNegatives(arrayWithNegatives);
+let arrayWithoutNegatives = findNegatives(arrayWithNegatives);
 console.log(arrayWithoutNegatives);
 
 function writeBackwards (str) {
@@ -24,7 +24,7 @@ function writeBackwards (str) {
     return reversedString;
 }
 
-string = "Hello, World!";
+let string = "Hello, World!";
 console.log("Original string: " + string);
 var backwardsString = writeBackwards(string);
 console.log("Reversed string: " + backwardsString);

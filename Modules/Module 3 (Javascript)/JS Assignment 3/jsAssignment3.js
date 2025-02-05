@@ -1,5 +1,5 @@
 function checkAge() {
-  var age = prompt("Please enter your age:");
+  let age = prompt("Please enter your age:");
 
   age = Number(age);
 

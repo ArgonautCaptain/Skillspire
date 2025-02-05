@@ -1,7 +1,7 @@
 function collectUserData() {
-  var fullName = prompt("Enter your full name:");
-  var favoriteFood = prompt("Enter your favorite food:");
-  var favoriteActivity = prompt("Enter your favorite activity:");
+  let fullName = prompt("Enter your full name:");
+  let favoriteFood = prompt("Enter your favorite food:");
+  let favoriteActivity = prompt("Enter your favorite activity:");
 
   if (!fullName || !favoriteFood || !favoriteActivity) {
     console.log("All fields are required. Please refresh and try again.");

@@ -1,12 +1,12 @@
 document.getElementById("userForm").addEventListener("submit", function (event) {
-  var firstName = document.getElementById("firstName").value;
-  var lastName = document.getElementById("lastName").value;
-  var email = document.getElementById("email").value;
-  var age = document.getElementById("age").value;
+  let firstName = document.getElementById("firstName").value;
+  let lastName = document.getElementById("lastName").value;
+  let email = document.getElementById("email").value;
+  let age = document.getElementById("age").value;
 
-  var fullName = firstName + " " + lastName;
+  let fullName = firstName + " " + lastName;
 
-  var outputDiv = document.getElementById("output");
+  let outputDiv = document.getElementById("output");
   outputDiv.innerHTML = `
     <h1>Name: ${fullName}</h1>
     <h1>Email: ${email}</h1>
