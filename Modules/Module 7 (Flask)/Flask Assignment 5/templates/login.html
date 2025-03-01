@@ -10,13 +10,13 @@
 <body>
   <h1>Welcome!</h1>
   <h3>Name:</h3>
-  <p>{{submitted.first_name}} {{submitted.last_name}}</p>
+  <p>{{session['first_name']}} {{session['last_name']}}</p>
   <h3>Email:</h3>
-  <p>{{submitted.email}}</p>
+  <p>{{session['email']}}</p>
   <h3>Home Address:</h3>
-  <p>{{submitted.home_address}}<br />{{submitted.city}}, {{submitted.state}} {{submitted.zip_code}}</p>
+  <p>{{session['home_address']}}<br />{{session['city']}}, {{session['state']}} {{session['zip_code']}}</p>
   <h3>Phone Number:</h3>
-  <p>{{submitted.phone_number}}</p>
+  <p>{{session['phone_number']}}</p>
 </body>
 
 </html>
