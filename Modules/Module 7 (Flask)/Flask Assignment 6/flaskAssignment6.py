@@ -8,18 +8,18 @@ app.secret_key = "mysecretkey"
 def home():
     if 'number' not in session:
         session['number'] = 0
+    else:
+        session['number'] += 1
     return render_template('home.html')
 
-@app.route('/addtwo', methods=['GET', 'POST'])
+@app.route('/addtwo')
 def addtwo():
-    if request.method == 'POST':
-        session['number'] += 2
+    session['number'] += 1
     return redirect('/')
 
-@app.route('/reset', methods=['GET', 'POST'])
+@app.route('/reset')
 def reset():
-    if request.method == 'POST':
-        session['number'] = 0
+    session['number'] = -1
     return redirect('/')
 
 if __name__ == '__main__':
