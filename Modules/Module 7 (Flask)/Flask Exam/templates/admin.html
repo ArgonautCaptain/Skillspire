@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Home - Flask Assessment</title>
+</head>
+
+<body>
+  {{header|safe}}
+  <h3>Part 4: Flask Session and Data Handling</h3>
+  {% if session['username'] %}
+  <p>Successfully logged in as user: {{session['username']}}</p>
+  <a href="/logout">Logout</a>
+  <h3>Admin Page:</h3>
+  <p>Welcome to the admin page!</p>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit quidem eum vero error saepe laborum. Aliquid deserunt rem temporibus perspiciatis neque! Architecto corporis harum accusantium alias officiis ipsam quia deserunt?</p>
+  {% else %}
+  <p>Sorry, you are not currently logged in.</p>
+  <a href="/login">Log In</a>
+  {% endif %}
+</body>
+
+</html>

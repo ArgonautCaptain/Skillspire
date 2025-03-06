@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Index - Flask Assessment</title>
+</head>
+
+<body>
+  {{header|safe}}
+  <h3>Part 2: Static Templates and Jinja2 Template Variables</h3>
+  <p>Welcome, {{session['name']}}!</p>
+  {% if session['name'] != 'user' %}
+  <p><a href="/notyou">Not you?</a></p>
+  {% else %}
+  <p>We don't know your name yet!</p>
+  {% endif %}
+  <br />
+  <p>To customize this page, navigate to localhost:5000/greet/&lt;your name here&gt;</p>
+  <p>OR</p>
+  <p>Enter your name below and press submit</p>
+  <form action="/greet_user" method="POST">
+    <input type="text" name="name" placeholder="Enter your name" required>
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Home - Flask Assessment</title>
+</head>
+
+<body>
+  {{header|safe}}
+  <h3>Part 3: Introduction to Forms and Requests</h3>
+  <p>You have submitted the following information:</p>
+  <p>First Name: {{session['first_name']}}</p>
+  <p>Last Name: {{session['last_name']}}</p>
+  <p>Phone Number: {{session['phone_number']}}</p>
+  <p>Home Address: {{session['home_address']}}</p>
+  <p>City: {{session['city']}}</p>
+  <p>State: {{session['state']}}</p>
+</body>
+
+</html>
