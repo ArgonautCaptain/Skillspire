@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Appointments</title>
+  <style>
+    .appointments-container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    th {
+      background-color: #d1d1d1;
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tr:hover {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="appointments-container">
+    <h2>Doctor's Appointments</h2>
+    <table>
+      <tr>
+        <th style="white-space: nowrap;">Date</th>
+        <th style="white-space: nowrap;">Time</th>
+        <th style="white-space: nowrap;">Patient Name</th>
+        <th>Complaint</th>
+      </tr>
+      {% for appointment in appointments %}
+      <tr>
+        <td style="white-space: nowrap;">{{ appointment.date }}</td>
+        <td style="white-space: nowrap;">{{ appointment.time }}</td>
+        <td style="white-space: nowrap;">{{ appointment.patient_name }}</td>
+        <td>
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+            <p style="flex: 1;">{{ appointment.complaint }}</p>
+            <button type="button" style="margin-left: 10px;"
+              onclick="window.location.href='/delete_appointment/{{ appointment.id }}'">Cancel</button>
+          </div>
+        </td>
+      </tr>
+      {% endfor %}
+      {% if not appointments %}
+      <tr>
+        <td colspan="4">No appointments found</td>
+      </tr>
+      {% endif %}
+    </table>
+    <button type="button" style="float: right;" onclick="window.location.href='/new_appointment'">Add New Appointment</button>
+  </div>
+
+
+</body>
+
+</html>
