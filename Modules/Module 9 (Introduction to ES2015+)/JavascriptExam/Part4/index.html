@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Character Battle</title>
+  <style>
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 1rem;
+      margin: 1rem;
+      width: 200px;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Character Battle Arena</h1>
+  <div class="container">
+    <div class="card" id="wizardCard">
+      <h3>Wizard (<span id="wizardName"></span>)</h3>
+      <p>Health: <span id="wizardHealth"></span></p>
+      <button onclick="wizard.fireball(ninja); updateUI();">Fireball Ninja</button>
+      <button onclick="wizard.heal(); updateUI();">Heal</button>
+    </div>
+
+    <div class="card" id="ninjaCard">
+      <h3>Ninja (<span id="ninjaName"></span>)</h3>
+      <p>Health: <span id="ninjaHealth"></span></p>
+      <button onclick="ninja.steal(wizard); updateUI();">Steal from Wizard</button>
+      <button onclick="ninja.getAway(); updateUI();">Get Away</button>
+    </div>
+
+    <div class="card" id="samuraiCard">
+      <h3>Samurai (<span id="samuraiName"></span>)</h3>
+      <p>Health: <span id="samuraiHealth"></span></p>
+      <button onclick="samurai.deathBlow(wizard); updateUI();">Death Blow Wizard</button>
+      <button onclick="samurai.meditate(); updateUI();">Meditate</button>
+    </div>
+  </div>
+
+  <script src="classesObjects.js"></script>
+</body>
+</html>
