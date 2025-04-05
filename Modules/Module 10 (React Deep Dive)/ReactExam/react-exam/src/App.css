@@ -1,0 +1,57 @@
+.App {
+  text-align: left;
+}
+
+.App-header {
+  display: flex;
+  align-items: center;
+  background-color: #282c34;
+  padding: 1rem 2rem;
+  color: white;
+  gap: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.App-header h1 {
+  margin-right: 2.5rem;
+  font-size: 1.5rem;
+}
+
+.App-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.App-header nav ul li {
+  margin: 0;
+}
+
+.App-header nav ul li a {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+}
+
+.App-header nav ul li a:hover {
+  color: #0080a3;
+}
+
+.App-header nav ul li a.active {
+  color: #00aedf;
+  text-decoration: underline;
+  pointer-events: none;
+  cursor: default;
+}
+
+.App-content {
+  padding: 2rem;
+  background-color: #303030;
+  min-height: calc(100vh - 4rem);
+  color: white;
+}
