@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User {{ user['id'] }}</title>
+</head>
+<body>
+    <h1>User {{ user['id'] }}</h1>
+    <p>Full Name: {{ user['first_name'] }} {{ user['last_name'] }}</p>
+    <p>Email: {{ user['email'] }}</p>
+    <p>Created at: {{ user['created_at'] }}</p>
+    <a href="/users/{{ user['id'] }}/edit">Edit</a> |
+    <a href="/users/{{ user['id'] }}/destroy">Delete</a>
+    <br><br>
+    <a href="/users">Go Back</a>
+</body>
+</html> 

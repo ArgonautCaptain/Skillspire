@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Users Index</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px 40px 40px 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 24px;
+        }
+
+        a {
+            color: #1976d2;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            padding: 12px 10px;
+            border-bottom: 1px solid #e0e0e0;
+            text-align: left;
+        }
+
+        th {
+            background: #f0f0f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .actions a {
+            margin-right: 10px;
+        }
+
+        .empty {
+            text-align: center;
+            color: #888;
+            padding: 30px 0;
+        }
+
+        .add-user {
+            display: inline-block;
+            margin-bottom: 16px;
+            background: #1976d2;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        .add-user:hover {
+            background: #125ea2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Users</h1>
+        <a class="add-user" href="/users/new">Add a new user</a>
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Created At</th>
+                <th>Actions</th>
+            </tr>
+            {% if users|length == 0 %}
+            <tr>
+                <td class="empty" colspan="5">No users found. Add a new user to get started!</td>
+            </tr>
+            {% else %}
+            {% for user in users %}
+            <tr>
+                <td>{{ user['id'] }}</td>
+                <td>{{ user['first_name'] }} {{ user['last_name'] }}</td>
+                <td>{{ user['email'] }}</td>
+                <td>{{ user['created_at'] }}</td>
+                <td class="actions">
+                    <a href="/users/{{ user['id'] }}">Show</a>
+                    <a href="/users/{{ user['id'] }}/edit">Edit</a>
+                    <a href="/users/{{ user['id'] }}/destroy">Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+            {% endif %}
+        </table>
+    </div>
+</body>
+
+</html>

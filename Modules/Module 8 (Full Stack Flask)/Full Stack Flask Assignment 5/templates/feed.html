@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}News Feed{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        <!-- Post Creation Form -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h4>Create New Post</h4>
+            </div>
+            <div class="card-body">
+                <form method="POST">
+                    <div class="mb-3">
+                        <textarea class="form-control" id="content" name="content" rows="3" placeholder="What's on your mind?" required></textarea>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Post</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Posts Feed -->
+        <h3 class="mb-4">News Feed</h3>
+        {% for post in posts %}
+            <div class="card mb-3">
+                <div class="card-body">
+                    <p class="card-text">{{ post.content }}</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">
+                            Posted by {{ post.author.username }} on {{ post.date_posted.strftime('%Y-%m-%d %H:%M') }}
+                        </small>
+                    </div>
+                </div>
+            </div>
+        {% else %}
+            <div class="alert alert-info">
+                No posts yet. Be the first to post something!
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %} 

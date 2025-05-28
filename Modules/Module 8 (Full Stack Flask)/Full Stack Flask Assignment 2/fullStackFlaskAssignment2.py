@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, session
+from flask import Flask, render_template, request, redirect, session, flash
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
@@ -40,8 +40,9 @@ def add_user():
     try:
       db.session.add(user)
       db.session.commit()
+      flash('User created successfully!', 'success')
     except:
-      print("Error", )
+      flash('Error creating user. Please try again.', 'error')
     return redirect('/')
 
 @app.route('/login')
@@ -55,9 +56,11 @@ def user_login():
     user = User.query.filter_by(email=email, password=password).first()
     if user:
         session['user'] = user.id
+        flash(f'Welcome back, {user.first_name}!', 'success')
         return redirect('/welcome')
     else:
-        return redirect('/')
+        flash('Invalid email or password. Please try again.', 'error')
+        return redirect('/login')
 
 @app.route('/welcome')
 def welcome():
@@ -65,7 +68,14 @@ def welcome():
         user = User.query.filter_by(id=session['user']).first()
         return render_template('welcome.html', user=user)
     else:
-        return redirect('/')
+        flash('Please login to access this page.', 'error')
+        return redirect('/login')
+
+@app.route('/logout')
+def logout():
+    session.pop('user', None)
+    flash('You have been logged out successfully.', 'success')
+    return redirect('/')
 
 if __name__ == '__main__':
   with app.app_context():
