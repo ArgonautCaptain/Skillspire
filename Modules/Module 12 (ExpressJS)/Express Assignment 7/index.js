@@ -84,7 +84,7 @@ app.put('/playlists/:id', validatePlaylist, (req, res) => {
     };
 
     playlists[playlistIndex] = updatedPlaylist;
-    res.json(updatedPlaylist);
+    res.status(200).json(updatedPlaylist);
 });
 
 // DELETE playlist
@@ -95,7 +95,7 @@ app.delete('/playlists/:id', (req, res) => {
     }
     const deletedPlaylist = playlists[playlistIndex];
     playlists = playlists.filter(p => p.id !== parseInt(req.params.id));
-    res.json(deletedPlaylist);
+    res.status(200).json(deletedPlaylist);
 });
 
 // GET songs from playlist
@@ -104,7 +104,7 @@ app.get('/playlists/:id/songs', (req, res) => {
     if (!playlist) {
         return res.status(404).json({ error: "Playlist not found" });
     }
-    res.json(playlist.songs);
+    res.status(200).json(playlist.songs);
 });
 
 // POST new song to playlist
@@ -137,7 +137,7 @@ app.delete('/playlists/:id/songs/:songId', (req, res) => {
 
     const deletedSong = playlist.songs[songIndex];
     playlist.songs = playlist.songs.filter(s => s.id !== parseInt(req.params.songId));
-    res.json(deletedSong);
+    res.status(200).json(deletedSong);
 });
 
 app.listen(port, () => {
