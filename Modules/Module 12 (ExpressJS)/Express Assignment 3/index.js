@@ -60,7 +60,7 @@ app.post('/books', validateBook, (req, res) => {
         ...req.body
     };
     books.push(newBook);
-    res.status(201).json(newBook);
+    res.status(201).json(newBook);1
 });
 
 // PUT update book
@@ -76,7 +76,7 @@ app.put('/books/:id', validateBook, (req, res) => {
     };
     
     books[bookIndex] = updatedBook;
-    res.json(updatedBook);
+    res.status(200).json(updatedBook);
 }); 
 
 // DELETE book
