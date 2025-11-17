@@ -20,6 +20,90 @@ This repo demonstrates my ability to **learn new technologies quickly**, **build
 
 # 🌟 Featured Projects: 
 
+## D&D Character Creator — React + MongoDB Full-Stack Application  
+_A fully custom character creation tool for Dungeons & Dragons 5th Edition, supporting both manual builds and procedurally generated characters._
+
+📁 **Path:** `Modules/Module 14 (MERN Full Stack)/FinalProject/` 
+💻 **Standalone Repo:** [ArgonautCaptain/dnd-character-generator](https://github.com/ArgonautCaptain/dnd-character-generator)
+
+🛠 **Tech Stack:**
+- **Frontend:** React, React Router, Controlled Forms, Custom Hooks  
+- **Backend:** Express.js REST API  
+- **Database:** MongoDB (character sheets, classes, species, ability scores)  
+- **Other:** Data validation, structured schemas, persistent storage  
+
+---
+
+### 🔮 Overview
+
+The D&D Character Creator is a full-stack MERN application designed to help users build or randomly generate complete 5e characters — including stats, race, class, backgrounds, inventory, proficiencies, and more.
+
+This project demonstrates both **UI/UX complexity** and **backend data modeling**, making it one of my strongest full-stack builds.
+
+---
+
+### 🧱 Core Features
+
+#### ✔️ Manual Character Builder  
+Users can create characters from scratch with an intuitive step-by-step builder:
+
+- Choose race/species  
+- Select class & subclass  
+- Assign ability scores (point buy or rolled)  
+- Choose background, proficiencies, equipment  
+- Add personality traits, flaws, bonds, ideals  
+- Auto-calculated modifiers + derived stats
+
+#### ✔️ Random Character Generator  
+One-click button generates a fully random but rules-valid D&D character:
+
+- Random race
+- Random class/subclass  
+- Random abilities  
+- Random backstory seeds  
+- Random equipment loadout  
+
+Perfect for quickly generating NPCs or fresh characters.
+
+#### ✔️ MongoDB Character Storage  
+All characters are saved to MongoDB using a structured document model:
+
+- `_id` assigned per character sheet  
+- Nested stat blocks  
+- Inventory and spells stored as arrays/subdocuments  
+- Fully editable & deletable  
+
+#### ✔️ Searchable Character List  
+Users can view all created characters with options to:
+
+- Open  
+- Edit  
+- Duplicate  
+- Delete  
+
+---
+
+### 🧩 Engineering Highlights
+
+- **Complex multi-section form management** with React controlled inputs  
+- **Reusable component architecture** (e.g., StatBlock, InventoryEditor, FeatureList)  
+- **Server-side validation** of character data  
+- **Schema design** tailored for a modular RPG system  
+- **REST API for CRUD operations**  
+- **Ability score algorithm implementation** (point-buy / roll)  
+- **Random generation algorithms** with weighted tables  
+
+---
+
+### 🌟 Why This Project Matters  
+This application demonstrates:
+
+- **Deep frontend logic + state management**  
+- **Full REST backend creation**  
+- **MongoDB modeling for complex objects**  
+- **Ability to build production-style tools**  
+- **Creative engineering aligned with a real user domain**  
+
 ## FullStackAssignment4 — Authenticated Message Board
 _A full-stack MERN application with protected routes, user accounts, and CRUD messaging._
 
@@ -57,12 +141,6 @@ The Express API validates tokens on every protected route and rejects unauthoriz
 ### 🔸 **End-to-end full-stack architecture**
 Frontend → API → Database.  
 Demonstrates complete understanding of the request/response cycle.
-
-### 🔸 **Custom Authentication Workflow**
-- Password hashing  
-- Token-based login  
-- Route protection  
-- Auth persistence  
 
 ### 🔸 **CRUD Interface**
 Users can create, read, update, and delete content through the React interface.
