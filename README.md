@@ -24,6 +24,7 @@ This repo demonstrates my ability to **learn new technologies quickly**, **build
 _A fully custom character creation tool for Dungeons & Dragons 5th Edition, supporting both manual builds and procedurally generated characters._
 
 📁 **Path:** `Modules/Module 14 (MERN Full Stack)/FinalProject/` 
+
 💻 **Standalone Repo:** [ArgonautCaptain/dnd-character-generator](https://github.com/ArgonautCaptain/dnd-character-generator)
 
 🛠 **Tech Stack:**
